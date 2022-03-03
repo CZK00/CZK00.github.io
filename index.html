@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket web client</title>
+</head>
+
+<body>
+    <h1>WebSocket Web Client</h1>
+    <a style="white-space:pre">ChargerID:  </a>
+    <input type="text" placeholder="input known chargerID" id = "chargerID"> 
+    <a style="white-space:pre">          </a><a style="white-space:pre">            </a><a style="white-space:pre">           </a>
+    <button id="connectBtn">connect start</button>
+    <button id="getDTBtn">get current dt models</button>
+    <div>Test Action:</div>
+    <button id="sendBtnBoot">BootNotificationTest</button>   
+    <button id="sendBtnStatus">StatusNotificationTest</button>
+    <button id="sendBtnAuther">AuthorizeTest</button>
+    <button id="sendBtnStartTransation">StartTransactionTest</button>
+    <button id="sendBtnStopTransaction">StopTransactionTest</button>
+
+    <br/>response from server:</br>
+    <ul id="messageList"></ul>
+
+    <script src="websocket-test.js"></script>
+</body>
+
+</html>
