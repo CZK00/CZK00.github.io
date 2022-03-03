@@ -1,0 +1,22 @@
+﻿@using MVCDemo.models
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Details</title>
+</head>
+<body>
+    <h1>Hello World From Details</h1>
+    <h3>@ViewData["PageTitle"]</h3>
+    @{ var student = ViewData["Student"] as Student;
+    }
+    <div>
+        name:@student.Name
+    </div>
+    <div>
+        email:@student.Email
+    </div>
+    <div>
+        class:@student.Class
+    </div>
+</body>
+</html>
