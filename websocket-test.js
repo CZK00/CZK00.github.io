@@ -2,8 +2,8 @@
 // 根据实际地址和端口进行修改，其他内容无需修改
 function startConnection() {
     var message = document.getElementById("chargerID");
-    //const uri = "ws://127.0.0.1:5000/" + message.value;
-    const uri = "ws://192.168.31.162:5000/" + message.value;
+    const uri = "ws://127.0.0.1:5000/" + message.value;
+    //const uri = "ws://192.168.31.162:5000/" + message.value;
 
     socket = new WebSocket(uri,["ocpp1.6",]);
     socket.onopen = function (e) {
@@ -21,8 +21,8 @@ function startConnection() {
 }
 // 获取DT模型request
 function getDTModles() {
-    //const uri = "ws://127.0.0.1:5000/GetDT";
-    const uri = "ws://192.168.31.162:5000/GetDT";
+    const uri = "ws://127.0.0.1:5000/GetDT";
+    //const uri = "ws://192.168.31.162:5000/GetDT";
     socket = new WebSocket(uri,["ocpp1.6",]);
     socket.onopen = function (e) {
         console.log("websocket estabished!");
